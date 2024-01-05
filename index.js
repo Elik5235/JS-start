@@ -1,5 +1,8 @@
-let i = 2;
-while(true){
-  i += 2;
-  console.log(i)
+const cp = 'one123';
+let pin = prompt ('pin its');
+while (pin !== cp){
+  pin = prompt("she ras")
 }
+ 
+
+  
