@@ -1,32 +1,10 @@
-function Book(title, author, year, price) {
+function Federation(title, popul, area) {
   this.title = title;
-  this.author = author;
-  this.year = year;
-  this.price = price;
+  this.popul = popul;
+  this.area = area;
 
   this.getTitle = function () {
-    return this.title;
-  }
-  this.getAuthor = function () {
-    return this.author;
-  }
-  this.getYear = function () {
-    return this.year;
-  }
-  this.getPrice = function () {
-    return this.price;
-  }
-  this.setTitle = function (newTitle) {
-    this.title = newTitle;
-  }
-  this.setAuthor = function (newAuthor) {
-    this.author = newAuthor;
-  }
-  this.setYear = function (newYear) {
-    this.year = newYear;
-  }
-  this.setPrice = function (newPrice) {
-    this.price = newPrice;
-  }
+    return this.popul / this.area;
+  };
 }
-const book1 = new Book('ветер', 'роб', 2020, 50);
+const federation1 = new Federation("США",20, 50);
