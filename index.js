@@ -1,14 +1,32 @@
-function fizzBuzzGame(limit) {
-  for (let i = 1; i <= limit; i++) {
-    if (i % 3 === 0 && i % 5 === 0) {
-      console.log("FizzBuzz");
-    } else if (1 % 3 === 0) {
-      console.log("Fizz");
-    } else if (1 % 5 === 0) {
-      console.log("Buzz");
-    } else {
-      console.log(i);
-    }
+function Book(title, author, year, price) {
+  this.title = title;
+  this.author = author;
+  this.year = year;
+  this.price = price;
+
+  this.getTitle = function () {
+    return this.title;
+  }
+  this.getAuthor = function () {
+    return this.author;
+  }
+  this.getYear = function () {
+    return this.year;
+  }
+  this.getPrice = function () {
+    return this.price;
+  }
+  this.setTitle = function (newTitle) {
+    this.title = newTitle;
+  }
+  this.setAuthor = function (newAuthor) {
+    this.author = newAuthor;
+  }
+  this.setYear = function (newYear) {
+    this.year = newYear;
+  }
+  this.setPrice = function (newPrice) {
+    this.price = newPrice;
   }
 }
-fizzBuzzGame(100);
+const book1 = new Book('ветер', 'роб', 2020, 50);
