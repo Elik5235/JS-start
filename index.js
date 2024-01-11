@@ -18,12 +18,46 @@
 // }
 //
 
-const mas = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-function plusnum(arr) {
- let res = 0;
-  for (let i = 0; i < arr.length; i++) {
-    res += arr[i];
+// const mas = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// function plusnum(arr) {
+//  let res = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     res += arr[i];
+//   }
+//   return res
+// }
+// console.log(plusnum(mas))
+// const numArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// function maxArray(array) {
+//   let maxNumber = array[0];
+//   for (let i = 0; i < array.length; i++) {
+//     if (array[i] > maxNumber) {
+//       maxNumber = array[i];
+//     }
+//   }
+//   return maxNumber;
+// }
+// console.log(maxArray(numArray));
+
+
+
+const numArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+function maxArray(array) {
+  for (let i = 0; i < array.length; i++) {
   }
-  return res
 }
-console.log(plusnum(mas))
+
+
+
+
+function calculateAverage(array) {
+  let sum = 0;
+  for (let i = 0; i < array.length; i++) {
+      sum += array[i];
+  }
+  let average = sum / array.length;
+  return average;
+}
+const array = [4, 5, 4, 2, 23, 15, 16];
+let result = calculateAverage(array);
+console.log("Среднее арифметическое: " + result); 
