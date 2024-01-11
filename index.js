@@ -1,21 +1,19 @@
-const departmentSalary = {
-  HR: 120000,
-  development: 100000,
-  PR: 1200,
-  MARK: 21211,
-  asisstant: undefined,
+const telphone1 = "888-9390-292-2211";
+const telphone2 = "888-9390-293-2211";
+const telphone3 = "888-9390-291-2211";
+const tel = {
+  0: "888-9390-292-2211",
+  1: "888-9390-293-2211",
+  2: "888-9390-291-2211",
 };
-function greet(departmentSalary) {
-  let sum = 0;
-  let nameOfUndefined;
-  for (let key in departmentSalary) {
-    if (typeof departmentSalary[key] !== undefined) {
-      sum += departmentSalary[key];
-    } else {
-      nameOfUndefined = key;
-      console.log("blablabla"`${nameOfUndefined}`);
-    }
+const arr = [2, 2, 2, 3, 4];
+const arr2 = new Array(2, 2, 2, 3, 4);
+  
+
+
+const Nom = [1, 2, 3, 4, ,5 ,6, 7 ,8 ,9 ,10];
+for ( let i = 0; i < Nom.length; 1++){
+  if(Nom[i] % 2 === 0){
+    console.log(Nom[i]);
   }
-  return sum;
 }
-console.log(greet(departmentSalary));
