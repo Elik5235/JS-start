@@ -1,63 +1,39 @@
-//.
-// const telphone1 = "888-9390-292-2211";
-// const telphone2 = "888-9390-293-2211";
-// const telphone3 = "888-9390-291-2211";
-// const tel = {
-//   0: "888-9390-292-2211",
-//   1: "888-9390-293-2211",
-//   2: "888-9390-291-2211",
-// };
-// const arr = [2, 2, 2, 3, 4];
-// const arr2 = new Array(2, 2, 2, 3, 4);
+// const arr = [1,2,3,4,5,6];
+// console.log(arr.reverse());
 
-// const Nom = [1, 2, 3, 4, ,5 ,6, 7 ,8 ,9 ,10];
-// for ( let i = 0; i < Nom.length; i++){
-//   if(Nom[i] % 2 === 0){
-//     console.log(Nom[i]);
-//   }
-// }
-//
+// const arr1 = [2,3,4,5,6,7];
+// console.log(arr1.concat(arr));
 
-// const mas = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-// function plusnum(arr) {
-//  let res = 0;
-//   for (let i = 0; i < arr.length; i++) {
-//     res += arr[i];
-//   }
-//   return res
-// }
-// console.log(plusnum(mas))
-// const numArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-// function maxArray(array) {
-//   let maxNumber = array[0];
-//   for (let i = 0; i < array.length; i++) {
-//     if (array[i] > maxNumber) {
-//       maxNumber = array[i];
-//     }
-//   }
-//   return maxNumber;
-// }
-// console.log(maxArray(numArray));
+// const arr2 = [aaa,sss,ddd];
+// console.log(arr2.push());
+
+// const arr3 = [21,2,12,2,12,4,'12']
+// arr3.pop;
+// console.log(arr3.join);
+
+// const arr4 = [2,2,3,4,6,67,11]
+// console.log(arr4.join)
+// const arr = [1,2,3,4,5,6];
+// console.log(arr.splice(2, 1))
+
+// console.log(arr.splice(2,0,'hi'))
+
+// const arr1 = [1, 2, 3, 4, 5];
+// console.log(arr1.splice(1, 2));
+
+// const arr2 = [1,2,3,4];
+// const arr4 = arr2.slice(1);
 
 
-
-const numArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-function maxArray(array) {
-  for (let i = 0; i < array.length; i++) {
-  }
+// const arr3 = [1, 2, 3, 4, 5];
+// arr3.splice(8,0,'aa')
+// arr3.splice(1,0,'w','tr-td');
+// arr3.splice(6,0,'vv')
+function IDE(arr) {
+    for(let i = 0; i < Array.length; i++){
+      if(arr[i] === arr[i + 1]) {
+            return true;
+        }
+    }
+return false;
 }
-
-
-
-
-function calculateAverage(array) {
-  let sum = 0;
-  for (let i = 0; i < array.length; i++) {
-      sum += array[i];
-  }
-  let average = sum / array.length;
-  return average;
-}
-const array = [4, 5, 4, 2, 23, 15, 16];
-let result = calculateAverage(array);
-console.log("Среднее арифметическое: " + result); 
