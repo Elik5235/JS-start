@@ -1,12 +1,35 @@
-const numaArr = [5,3,-9,21,5,1,-2,4]
-// function filter(item){
-// if (item % 2 === 0){
-// return true;
-// }
-// return false;
-// }
-// console.log(filter(1))
-function filter(item){
-return item % 2 === 0
-}
-console.log(filter.numaArr)
+const dogArray = [
+  {
+    nik: "tuz",
+    color: "black",
+    w: 3,
+    age: 4,
+  },
+  {
+    nik: "muz",
+    color: "red",
+    w: 36,
+    age: 45,
+  },
+  {
+    nik: "kuz",
+    color: "yel",
+    w: 6,
+    age: 5,
+  },
+  {
+    nik: "fuz",
+    color: "blue",
+    w: 7,
+    age: 6,
+  },
+];
+
+dogArray.sort((dog1, dog2) => {
+  if (dog1.w < dog2.w) {
+    return -1;
+  }
+  else{
+    return 1;
+  }
+});
