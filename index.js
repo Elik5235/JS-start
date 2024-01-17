@@ -26,7 +26,7 @@ const dogArray = [
 ];
 
 dogArray.sort((dog1, dog2) => {
-  if (dog1.w < dog2.w) {
+  if (dog1.age > dog2.age) {
     return -1;
   }
   else{
